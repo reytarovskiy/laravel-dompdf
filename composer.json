@@ -12,9 +12,14 @@
     "require": {
         "php": ">=7",
         "illuminate/support": "^5.5|^6",
-        "dompdf/dompdf": "^0.8"
+        "dompdf/dompdf": "dev-patch-2"
     },
-
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/neoteknic/dompdf"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Barryvdh\\DomPDF\\": "src"
